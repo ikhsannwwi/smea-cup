@@ -57,11 +57,11 @@
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li class="active"><a href="/" class="nav-link">Home</a></li>
-                <li><a href="matches.html" class="nav-link">Matches</a></li>
-                <li><a href="players.html" class="nav-link">Players</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="{{request()->is('/') ? 'active' : ''}}"><a href="/" class="nav-link">Home</a></li>
+                <li class="{{request()->is('pertandingan') ? 'active' : ''}}"><a href="/pertandingan" class="nav-link">Pertandingan</a></li>
+                <li class="{{request()->is('support') ? 'active' : ''}}"><a href="/support" class="nav-link">Support</a></li>
+                <li class="{{request()->is('blog') ? 'active' : ''}}"><a href="/blog" class="nav-link">Blog</a></li>
+                <li class="{{request()->is('tentang-kami') ? 'active' : ''}}"><a href="/tentang-kami" class="nav-link">Tentang Kami</a></li>
               </ul>
             </nav>
 

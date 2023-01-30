@@ -10,4 +10,8 @@ class landingController extends Controller
         
         return view('landing.home');
     }
+    public function pertandingan(){
+        
+        return view('landing.pertandingan');
+    }
 }
