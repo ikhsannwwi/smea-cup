@@ -1,7 +1,11 @@
 @extends('landing.layouts.header')
 
+@section('title')
+    Pertandingan
+@endsection
+
 @section('content')
-<div class="hero overlay" style="background-image: url('images/bg_3.jpg');">
+<div class="hero overlay" style="background-image: url('{{asset('soccer-master/images/bg_3.jpg')}}');">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 mx-auto text-center">
@@ -24,7 +28,7 @@
         <span class="score">4-1</span>
         <div class="team-1 w-50">
           <div class="team-details w-100 text-center">
-            <img src="images/logo_1.png" alt="Image" class="img-fluid">
+            <img src="{{asset('soccer-master/images/logo_1.png')}}" alt="Image" class="img-fluid">
             <h3>LA LEGA <span>(win)</span></h3>
             <ul class="list-unstyled">
               <li>Anja Landry (7)</li>
@@ -36,7 +40,7 @@
         </div>
         <div class="team-2 w-50">
           <div class="team-details w-100 text-center">
-            <img src="images/logo_2.png" alt="Image" class="img-fluid">
+            <img src="{{asset('soccer-master/images/logo_2.png')}}" alt="Image" class="img-fluid">
             <h3>JUVENDU <span>(loss)</span></h3>
             <ul class="list-unstyled">
               <li>Macauly Green (3)</li>
@@ -66,14 +70,14 @@
             <div class="widget-vs">
               <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
                 <div class="team-1 text-center">
-                  <img src="images/logo_1.png" alt="Image">
+                  <img src="{{asset('soccer-master/images/logo_1.png')}}" alt="Image">
                   <h3>Football League</h3>
                 </div>
                 <div>
                   <span class="vs"><span>VS</span></span>
                 </div>
                 <div class="team-2 text-center">
-                  <img src="images/logo_2.png" alt="Image">
+                  <img src="{{asset('soccer-master/images/logo_2.png')}}" alt="Image">
                   <h3>Soccer</h3>
                 </div>
               </div>
@@ -104,14 +108,14 @@
               <div class="widget-vs">
                 <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
                   <div class="team-1 text-center">
-                    <img src="images/logo_1.png" alt="Image">
+                    <img src="{{asset('soccer-master/images/logo_1.png')}}" alt="Image">
                     <h3>Football League</h3>
                   </div>
                   <div>
                     <span class="vs"><span>VS</span></span>
                   </div>
                   <div class="team-2 text-center">
-                    <img src="images/logo_2.png" alt="Image">
+                    <img src="{{asset('soccer-master/images/logo_2.png')}}" alt="Image">
                     <h3>Soccer</h3>
                   </div>
                 </div>
@@ -136,14 +140,14 @@
               <div class="widget-vs">
                 <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
                   <div class="team-1 text-center">
-                    <img src="images/logo_3.png" alt="Image">
+                    <img src="{{asset('soccer-master/images/logo_3.png')}}" alt="Image">
                     <h3>Football League</h3>
                   </div>
                   <div>
                     <span class="vs"><span>VS</span></span>
                   </div>
                   <div class="team-2 text-center">
-                    <img src="images/logo_4.png" alt="Image">
+                    <img src="{{asset('soccer-master/images/logo_4.png')}}" alt="Image">
                     <h3>Soccer</h3>
                   </div>
                 </div>
@@ -169,14 +173,14 @@
               <div class="widget-vs">
                 <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
                   <div class="team-1 text-center">
-                    <img src="images/logo_1.png" alt="Image">
+                    <img src="{{asset('soccer-master/images/logo_1.png')}}" alt="Image">
                     <h3>Football League</h3>
                   </div>
                   <div>
                     <span class="vs"><span>VS</span></span>
                   </div>
                   <div class="team-2 text-center">
-                    <img src="images/logo_2.png" alt="Image">
+                    <img src="{{asset('soccer-master/images/logo_2.png')}}" alt="Image">
                     <h3>Soccer</h3>
                   </div>
                 </div>
@@ -201,14 +205,14 @@
               <div class="widget-vs">
                 <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
                   <div class="team-1 text-center">
-                    <img src="images/logo_3.png" alt="Image">
+                    <img src="{{asset('soccer-master/images/logo_3.png')}}" alt="Image">
                     <h3>Football League</h3>
                   </div>
                   <div>
                     <span class="vs"><span>VS</span></span>
                   </div>
                   <div class="team-2 text-center">
-                    <img src="images/logo_4.png" alt="Image">
+                    <img src="{{asset('soccer-master/images/logo_4.png')}}" alt="Image">
                     <h3>Soccer</h3>
                   </div>
                 </div>
@@ -251,7 +255,7 @@
     <div class="owl-4-slider owl-carousel">
       <div class="item">
         <div class="video-media">
-          <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+          <img src="{{asset('soccer-master/images/img_1.jpg')}}" alt="Image" class="img-fluid">
           <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
             <span class="icon mr-3">
               <span class="icon-play"></span>
@@ -264,7 +268,7 @@
       </div>
       <div class="item">
         <div class="video-media">
-          <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+          <img src="{{asset('soccer-master/images/img_2.jpg')}}" alt="Image" class="img-fluid">
           <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
             <span class="icon mr-3">
               <span class="icon-play"></span>
@@ -277,7 +281,7 @@
       </div>
       <div class="item">
         <div class="video-media">
-          <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+          <img src="{{asset('soccer-master/images/img_3.jpg')}}" alt="Image" class="img-fluid">
           <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
             <span class="icon mr-3">
               <span class="icon-play"></span>
@@ -291,7 +295,7 @@
 
       <div class="item">
         <div class="video-media">
-          <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+          <img src="{{asset('soccer-master/images/img_1.jpg')}}" alt="Image" class="img-fluid">
           <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
             <span class="icon mr-3">
               <span class="icon-play"></span>
@@ -304,7 +308,7 @@
       </div>
       <div class="item">
         <div class="video-media">
-          <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+          <img src="{{asset('soccer-master/images/img_2.jpg')}}" alt="Image" class="img-fluid">
           <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
             <span class="icon mr-3">
               <span class="icon-play"></span>
@@ -317,7 +321,7 @@
       </div>
       <div class="item">
         <div class="video-media">
-          <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+          <img src="{{asset('soccer-master/images/img_3.jpg')}}" alt="Image" class="img-fluid">
           <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
             <span class="icon mr-3">
               <span class="icon-play"></span>
@@ -344,7 +348,7 @@
     <div class="col-lg-6">
       <div class="custom-media d-flex">
         <div class="img mr-4">
-          <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+          <img src="{{asset('soccer-master/images/img_1.jpg')}}" alt="Image" class="img-fluid">
         </div>
         <div class="text">
           <span class="meta">May 20, 2020</span>
@@ -357,7 +361,7 @@
     <div class="col-lg-6">
       <div class="custom-media d-flex">
         <div class="img mr-4">
-          <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+          <img src="{{asset('soccer-master/images/img_3.jpg')}}" alt="Image" class="img-fluid">
         </div>
         <div class="text">
           <span class="meta">May 20, 2020</span>

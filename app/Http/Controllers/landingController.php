@@ -14,4 +14,16 @@ class landingController extends Controller
         
         return view('landing.pertandingan');
     }
+    public function support(){
+        
+        return view('landing.support');
+    }
+    public function blog(){
+        
+        return view('landing.blog');
+    }
+    public function tentang_kami(){
+        
+        return view('landing.tentang-kami');
+    }
 }

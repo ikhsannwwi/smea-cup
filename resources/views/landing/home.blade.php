@@ -1,5 +1,9 @@
 @extends('landing.layouts.header')
 
+@section('title')
+    Home
+@endsection
+
 @section('content')
 <div class="hero overlay" style="background-image: url('{{('soccer-master/images/bg_3.jpg')}}');">
     <div class="container">

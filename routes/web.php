@@ -22,4 +22,4 @@ Route::get('/', [landingController::class, 'index'])->name('index');
 Route::get('/pertandingan', [landingController::class, 'pertandingan'])->name('pertandingan');
 Route::get('/support', [landingController::class, 'support'])->name('support');
 Route::get('/blog', [landingController::class, 'blog'])->name('blog');
-Route::get('/tentang-kami', [landingController::class, 'tentang-kami'])->name('tentang-kami');
+Route::get('/tentang-kami', [landingController::class, 'tentang_kami'])->name('tentang_kami');
